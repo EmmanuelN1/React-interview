@@ -1,0 +1,63 @@
+.input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.input__container{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.input__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;   
+}
+
+textarea {
+    padding-top: 20px;
+}
+
+.login__container > form > input , textarea {
+    height:30px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 98%;
+}
+
+
+.input__submitButton{
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height:30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.themePane {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+
+.input__container > form >.message{
+    padding-top: 20px;
+}
+.theme-red .theme {
+    background: red;
+    color:white 
+}
+.theme-blueviolet .theme {
+    background: blueviolet;
+}
