@@ -1,11 +1,10 @@
 export const initialState = {
     basket : null,
-    theme:null
+    themeValue:null
 };
 
 
 const reducer = (state, action) => {
-    console.log(action);
    switch(action.type){
        case 'ADD_TO_INFO':
         return{
@@ -16,19 +15,19 @@ const reducer = (state, action) => {
            case 'ADD_THEME_BLUE':
             return{
                 ...state,
-                
+                themeValue: action.item,
             }
 
             case 'ADD_THEME_GREEN':
             return{
                 ...state,
-                
+                themeValue: action.item,
             }
 
             case 'ADD_THEME_RED':
             return{
                 ...state,
-                
+                themeValue: action.item,                
             }
         default:
             return state;
